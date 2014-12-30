@@ -6,7 +6,7 @@ module SimpleEnum
       def initialize(name, enum, source = nil, prefix = nil)
         @name = name.to_s
         @enum = enum
-        @source = source.to_s.presence || "#{name}#{SimpleEnum.suffix}"
+        @source = source.to_s.presence || "#{name}"
         @prefix = prefix
       end
 
